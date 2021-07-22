@@ -16,6 +16,8 @@ cat gpg.key
 ```
 # Add this key into github
 
+To know the process about "how to add GPG key in github?" please follow this link: https://medium.com/big0one/how-to-create-a-verified-commit-in-github-using-gpg-key-signature-16acee004e0f
+
 # Add this key into local git client
 
 ```
