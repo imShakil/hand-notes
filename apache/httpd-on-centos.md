@@ -4,6 +4,12 @@ In a standard installation, CentOS 7 is set to prevent traffic to Apache.
 
 Normal web traffic uses the http protocol on Port 80, while encrypted web traffic uses the https protocol, on Port 443.
 
+1. To get the active zones of apache server
+
+```
+firewall-cmd --get-active-zones
+```
+
 1. Modify your firewall to allow connections on these ports using the following commands:
 ```text
 sudo firewall-cmd ––permanent ––add-port=80/tcp
