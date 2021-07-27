@@ -62,10 +62,7 @@ ssh -fNL [port to be used in ldap browser]:ldap server address:ldap server port 
 an example:
 
 ```
-ssh -fNL 59![Screenshot from 2021-07-27 16-58-18](https://user-images.githubusercontent.com/20867846/127233104-f39c0ecc-f4d5-464e-8f0d-c94ea5343aed.png)
-![Screenshot from 2021-07-27 16-58-48](https://user-images.githubusercontent.com/20867846/127233111-b5e0ca58-fcf7-40ae-a059-83a0e58eb4ec.png)
-![Screenshot from 2021-07-27 16-59-08](https://user-images.githubusercontent.com/20867846/127233114-f0476417-4fe4-40bb-abc9-ab2a0649a733.png)
-09:localhost:1636 root@172.16.132.129
+ssh -fNL 5909:localhost:1636 root@172.16.132.129
 ```
 
 It may asked a root password just enter the password you have created using `sudo passwd`. 
