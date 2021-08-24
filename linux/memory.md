@@ -11,3 +11,9 @@
     ```
     ps -ef | grep java
     ```
+# To clear Cache, Buffer, Pages, entries
+
+```
+sudo su -
+sync; echo 1/2/3 > /proc/sys/vm/drop_caches
+```
