@@ -31,25 +31,41 @@ KiB Swap:     8188 total,     1284 free,     6904 used.  1672064 avail Mem
 The columns are labeled:
 
 PID: Shows task’s unique process ID.
+
 USER: User name of owner of task.
+
 PR: Stands for priority of the task.
+
 NI: Represents a Nice Value of task. A negative nice value implies higher priority, and positive nice value means lower priority.
+
 VIRT: Total virtual memory used by the task.
+
 RES: Represents the amount of actual physical memory a process is consuming.
+
 SHR: Represents the Shared Memory size (kb) used by a task.
+
 S: The state the process is in.
+
 %CPU: Represents the CPU usage.
+
 %MEM: Shows the Memory usage of task.
+
 TIME+: CPU Time, the same as ‘TIME,’ but reflecting more granularity through hundredths of a second.
+
 COMMAND: The command that is being run.
+
 Above the list of processes, there's a whole bunch of other useful information. Some of these details may look strange and confusing, but once you take some time to step through each one, you'll see they are very useful stats to pull up in a pinch.
 
 The first row contains general system information:
 
 top:  this is simply the command name...followed by:
+
 XX:YY:XX : the time, updated every time the screen updates.
+
 up (then X day, YY:ZZ ): the system's uptime, or how much time has passed since the system turned on.
+
 load average (then three numbers): the system load over the last one, five, and 15 minutes, respectively.
+
 The second row (Tasks) shows information about the running tasks, and it's fairly self-explanatory. It shows the total number of processes and the number of running, sleeping, stopped, and zombie processes. This is literally a sum of the S (state) column described above.
 
 The third row (%Cpu(s)) shows the CPU usage separated by types. The data are the values between screen refreshes. The values are:
