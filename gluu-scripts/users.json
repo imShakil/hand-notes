@@ -1,0 +1,70 @@
+{
+  "schemas": [
+    "urn:ietf:params:scim:api:messages:2.0:ListResponse"
+  ],
+  "totalResults": 2,
+  "startIndex": 1,
+  "itemsPerPage": 2,
+  "Resources": [
+    {
+      "schemas": [
+        "urn:ietf:params:scim:schemas:core:2.0:User"
+      ],
+      "id": "d636268c-2f10-4e0f-81dd-8ec4b2ecc166",
+      "meta": {
+        "resourceType": "User",
+        "lastModified": "2022-08-18T02:59:23.774Z",
+        "location": "https://4x.gluu.org/identity/restv1/scim/v2/Users/d636268c-2f10-4e0f-81dd-8ec4b2ecc166"
+      },
+      "userName": "admin",
+      "name": {
+        "familyName": "User",
+        "givenName": "Admin",
+        "middleName": "Admin",
+        "formatted": "Admin Admin User"
+      },
+      "displayName": "Default Admin User",
+      "nickName": "Admin",
+      "active": true,
+      "emails": [
+        {
+          "value": "admin@4x.gluu.org",
+          "primary": false
+        }
+      ],
+      "groups": [
+        {
+          "value": "60B7",
+          "display": "Gluu Manager Group",
+          "type": "direct",
+          "$ref": "https://4x.gluu.org/identity/restv1/scim/v2/Groups/60B7"
+        }
+      ]
+    },
+    {
+      "schemas": [
+        "urn:ietf:params:scim:schemas:core:2.0:User"
+      ],
+      "id": "f4ac74d5-fb5c-4448-ae33-361ba5f60cd0",
+      "meta": {
+        "resourceType": "User",
+        "created": "2022-08-18T01:38:23.149Z",
+        "location": "https://4x.gluu.org/identity/restv1/scim/v2/Users/f4ac74d5-fb5c-4448-ae33-361ba5f60cd0"
+      },
+      "userName": "bot_shakil",
+      "name": {
+        "familyName": "bot",
+        "givenName": "shakil",
+        "formatted": "shakil bot"
+      },
+      "displayName": "bot shakil",
+      "active": true,
+      "emails": [
+        {
+          "value": "bot_shakil@4x.gluu.org",
+          "primary": false
+        }
+      ]
+    }
+  ]
+}
