@@ -3,10 +3,10 @@
 import os
 import subprocess
 
-keytool = "/opt/amazon-corretto-11.0.14.10.1-linux-x64/bin/keytool"
-defaultTrustStoreFN = "/opt/amazon-corretto-11.0.14.10.1-linux-x64/jre/lib/security/cacerts"
+keytool = "/opt/jre/bin/keytool" # change this according to version
+defaultTrustStoreFN = "/opt/jre/jre/lib/security/cacerts"
 defaultTrustStorePW = "changeit"
-host = "test.gluu.org"
+host = "test.gluu.org" # replace with accurate host name
 cert_folder = "/etc/certs/"
 
 def delete_key(crt_name):
@@ -20,14 +20,15 @@ def delete_key(crt_name):
 def import_key(crt_name):
     #print((cert_folder+"{}.crt").format(crt_name))
     try:
-        subprocess.call([keytool, "-importcert", "-file", (cert_folder+"{}.crt").format(crt_name), "-keystore", defaultTrustStoreFN, "-alias", (host+"_{}").format(crt_name), "-storepass", defaultTrustStorePW])
+        subprocess.call([keytool, "-importcert", "-file", (cert_folder+"{}.crt").format(crt_name), "-keystore", defaultTrustStoreFN, "-alias", (host+"_{}").format(crt_name), "-storepass", defaultTrustStorePW, "-noprompt"])
     except Exception as e:
         print(e, " for ", crt_name)
 
 
 def config_keystore():
-    delete_keys = ["idp-signing", "idp-encryption"]
-    import_keys = ["idp-signing", "idp-encryption"]
+    # add list here to delete / import keys from
+    delete_keys = ["httpd", "idp-signing", "idp-encryption"]
+    import_keys = ["httpd", "idp-signing", "idp-encryption"]
 
     for item in delete_keys:
         delete_key(item)
