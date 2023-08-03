@@ -2,10 +2,9 @@ copyright: Copyright &copy; 2023, Shakil's Hand Notes
 repo_name: Hand Notes
 repo_url: https://github.com/imshakil/hand-notes
 site_name: Shakil's Hand Notes
-site_url: https://imshakil.github.io/hand-notes
 site_author: Mobarak Hosen Shakil
 site_description: Shakil's Personal Hand notes
-docs_dir: ./docs
+docs_dir: ./docs/
 edit_uri: edit/main/docs
 
 nav:
