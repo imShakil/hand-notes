@@ -1,0 +1,81 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+   box-sizing: border-box; 
+  }
+  body {
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    min-height: calc(100vh - 40vh);
+  }
+  #main > article {
+    flex: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+    background: beige;
+  }
+  #main > nav {
+    order: -1;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  .head {
+    padding: 20px;
+    font-size: 1.5em;
+    color: white;
+  }
+  .head > p {
+    font-size: .8em;
+    margin-top: 0px;
+    padding-left: 30px;
+  }
+  .nav-list {
+    float: left;
+  }
+  .foter {
+    text-align: center;
+    color: white;
+  }
+</style>
+<body>
+  <header>Header
+    <div class="head"> Delta Plan
+      <p> A demo template design</p>
+    </div> 
+  </header>
+  <div id="main">
+    <article>
+      <div>Article</div>
+      <ul><li><p>Post 1: post words </p></li>
+        <li><p>Post 2: post words </p></li>
+      </ul>
+    </article>
+    <nav>
+      <div> Navigation</div>
+      <ul class="nav-list"><li>List 1</li>
+      <li>List 2</li>
+    </ul>
+    </nav>
+    
+    <aside>Aside
+      <ol><li><a href="#"> Archives</a></li>
+        <li><a href="#"> Categories</a></li>
+        <li><a href="#"> Tags</a></li>
+        <li><a href="#"> Most Viewed</a></li>
+      </ol>
+    </aside>
+  </div>
+  <footer>Footer
+    <div class="foter"> Copyright &copy; ICT, IU - <script>document.write(new Date().getFullYear())</script> </div>
+  </footer>
+</body>
