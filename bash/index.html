@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Mobarak Hosen Shakil" /><link rel="canonical" href="https://imshakil.github.io/hand-notes/bash/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Index - Shakil's Hand Notes</title>
+    <title>Bash Programming Outline - Shakil's Hand Notes</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Index";
+        var mkdocs_page_name = "Bash Programming Outline";
         var mkdocs_page_input_path = "bash/index.md";
         var mkdocs_page_url = "/hand-notes/bash/";
       </script>
@@ -47,15 +47,45 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../apache/httpd-on-centos/">Httpd on centos</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../apache/jvm-keystore/">Jvm keystore</a>
+                  </li>
               </ul>
               <p class="caption"><span class="caption-text">Bash</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Index</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Bash Programming Outline</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#getting-started-with-bash">Getting Started with Bash</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#variables-and-operators-in-bash">Variables and Operators in Bash:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bash-scripting-control-structures">Bash Scripting Control Structures:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bash-scripting-functions">Bash Scripting Functions:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bash-scripting-best-practices">Bash Scripting Best Practices:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#advanced-bash-scripting">Advanced Bash Scripting:</a>
+    </li>
+    </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Database</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../database/sqlite3/">Python SQLite Cheat-Sheet</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Opendj</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../database/opendj/Connect-internal-LDAP-server-in-LDAP-browser/">Connect internal LDAP server in LDAP browser</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../database/opendj/basic-config/">Basic config</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../database/opendj/dsconfig/">get-global-configuration-prop</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../database/opendj/export-import/">Export data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../database/opendj/ldapsearch/">To count total users in opendj backends:</a>
+                </li>
+    </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Devops</span></p>
@@ -63,6 +93,11 @@
                   <li class="toctree-l1"><a class="reference internal" href="../devops/docker/">Docker</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../devops/kubernetes/">Kubernetes</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Gpg key</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../gpg-key/commit-signature-verification/">To install gnupg</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Linux</span></p>
@@ -82,19 +117,6 @@
               <p class="caption"><span class="caption-text">Networking</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../networking/ip-config/">Ip config</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Opendj</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../opendj/Connect-internal-LDAP-server-in-LDAP-browser/">Connect internal LDAP server in LDAP browser</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../opendj/basic-config/">Basic config</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../opendj/dsconfig/">get-global-configuration-prop</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../opendj/export-import/">Export data</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../opendj/ldapsearch/">To count total users in opendj backends:</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Os</span></p>
@@ -131,7 +153,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Bash &raquo;</li>
-      <li class="breadcrumb-item active">Index</li>
+      <li class="breadcrumb-item active">Bash Programming Outline</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -140,12 +162,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="bash-programming-outline">Bash Programming Outline</h1>
+<h2 id="getting-started-with-bash">Getting Started with Bash</h2>
+<ul>
+<li>Introduction to Bash scripting: https://linuxconfig.org/bash-scripting-tutorial-for-beginners</li>
+<li>Bash basics: https://tldp.org/LDP/Bash-Beginners-Guide/html/</li>
+<li>Bash scripting cheatsheet: https://devhints.io/bash</li>
+</ul>
+<h2 id="variables-and-operators-in-bash">Variables and Operators in Bash:</h2>
+<ul>
+<li>Variables and data types in Bash: https://linuxize.com/post/bash-variables/</li>
+<li>Arithmetic Operators in Bash: https://www.gnu.org/software/bash/manual/html_node/Shell-Arithmetic.html</li>
+<li>Comparison Operators in Bash: https://www.tldp.org/LDP/abs/html/comparison-ops.html</li>
+</ul>
+<h2 id="bash-scripting-control-structures">Bash Scripting Control Structures:</h2>
+<ul>
+<li>If-else statements in Bash: https://www.howtogeek.com/307665/how-to-write-if-else-statements-in-bash-shell-script/</li>
+<li>Loops in Bash: https://www.cyberciti.biz/faq/bash-for-loop/</li>
+<li>Switch statement in Bash: https://linuxize.com/post/bash-case-statement/</li>
+</ul>
+<h2 id="bash-scripting-functions">Bash Scripting Functions:</h2>
+<ul>
+<li>Functions in Bash: https://www.shellscript.sh/functions.html</li>
+<li>Bash function parameters: https://linuxize.com/post/bash-functions/#function-parameters</li>
+<li>Bash command substitution: https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html</li>
+</ul>
+<h2 id="bash-scripting-best-practices">Bash Scripting Best Practices:</h2>
+<ul>
+<li>Shellcheck: https://www.shellcheck.net/</li>
+<li>Bash Style Guide: https://google.github.io/styleguide/shellguide.html</li>
+<li>Bash Debugging: https://www.linux.com/topic/desktop/debugging-bash-scripts-beginners-guide/</li>
+</ul>
+<h2 id="advanced-bash-scripting">Advanced Bash Scripting:</h2>
+<ul>
+<li>Regular expressions in Bash: https://www.regular-expressions.info/posixbrackets.html</li>
+<li>Bash command line arguments: https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_07.html</li>
+<li>Bash Scripting Examples: https://www.cyberciti.biz/tips/category/bash</li>
+</ul>
+<p><strong>NB</strong>: This outline is generated by <a href="chat.openai.com">chatGPT-4</a></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../apache/httpd-on-centos/" class="btn btn-neutral float-left" title="Httpd on centos"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../apache/jvm-keystore/" class="btn btn-neutral float-left" title="Jvm keystore"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../database/sqlite3/" class="btn btn-neutral float-right" title="Python SQLite Cheat-Sheet">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -170,7 +229,7 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../apache/httpd-on-centos/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../apache/jvm-keystore/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../database/sqlite3/" style="color: #fcfcfc">Next &raquo;</a></span>

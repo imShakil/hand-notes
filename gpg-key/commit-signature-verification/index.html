@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Mobarak Hosen Shakil" /><link rel="canonical" href="https://imshakil.github.io/hand-notes/opendj/export-import/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Mobarak Hosen Shakil" /><link rel="canonical" href="https://imshakil.github.io/hand-notes/gpg-key/commit-signature-verification/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Export data - Shakil's Hand Notes</title>
+    <title>To install gnupg - Shakil's Hand Notes</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Export data";
-        var mkdocs_page_input_path = "opendj/export-import.md";
-        var mkdocs_page_url = "/hand-notes/opendj/export-import/";
+        var mkdocs_page_name = "To install gnupg";
+        var mkdocs_page_input_path = "gpg-key/commit-signature-verification.md";
+        var mkdocs_page_url = "/hand-notes/gpg-key/commit-signature-verification/";
       </script>
     
     <!--[if lt IE 9]>
@@ -47,15 +47,31 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../apache/httpd-on-centos/">Httpd on centos</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../apache/jvm-keystore/">Jvm keystore</a>
+                  </li>
               </ul>
               <p class="caption"><span class="caption-text">Bash</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../bash/">Index</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bash/">Bash Programming Outline</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Database</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../database/sqlite3/">Python SQLite Cheat-Sheet</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Opendj</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../database/opendj/Connect-internal-LDAP-server-in-LDAP-browser/">Connect internal LDAP server in LDAP browser</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../database/opendj/basic-config/">Basic config</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../database/opendj/dsconfig/">get-global-configuration-prop</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../database/opendj/export-import/">Export data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../database/opendj/ldapsearch/">To count total users in opendj backends:</a>
+                </li>
+    </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Devops</span></p>
@@ -63,6 +79,13 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../devops/docker/">Docker</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../devops/kubernetes/">Kubernetes</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Gpg key</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">To install gnupg</a>
+    <ul class="current">
+    </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Linux</span></p>
@@ -82,21 +105,6 @@
               <p class="caption"><span class="caption-text">Networking</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../networking/ip-config/">Ip config</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Opendj</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../Connect-internal-LDAP-server-in-LDAP-browser/">Connect internal LDAP server in LDAP browser</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../basic-config/">Basic config</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../dsconfig/">get-global-configuration-prop</a>
-                  </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Export data</a>
-    <ul class="current">
-    </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../ldapsearch/">To count total users in opendj backends:</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Os</span></p>
@@ -132,8 +140,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-          <li>Opendj &raquo;</li>
-      <li class="breadcrumb-item active">Export data</li>
+          <li>Gpg key &raquo;</li>
+      <li class="breadcrumb-item active">To install gnupg</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -142,36 +150,37 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="export-data">Export data</h1>
-<ul>
-<li>to export data into <code>/opt/opendj/backup.ldiff</code> file, change <code>pwd</code> with <strong>password</strong>:</li>
-</ul>
-<pre><code class="language-commandline">/opt/opendj/bin/export-ldif --hostname &quot;localhost&quot; --port 4444 --bindDN &quot;cn=Directory manager&quot; --bindPassword &quot;pwd&quot; --backendID userRoot --ldifFile ./backup.ldiff --trustAll
+                <h1 id="to-install-gnupg">To install gnupg</h1>
+<pre><code class="language-text">sudo apt-get install gnupg
 </code></pre>
-<ul>
-<li>to export data into <code>/opt/opendj/backup.ldiff</code> file, create password file as a <code>.pw</code>:</li>
-</ul>
-<pre><code class="language-commandline">/opt/opendj/bin/export-ldif --hostname &quot;localhost&quot; --port 4444 --bindDN &quot;cn=Directory manager&quot; --bindPasswordFile /root/.pw --backendID userRoot --ldifFile ./backup.ldiff --trustAll
+<h1 id="to-generate-gpg-key-with-details">To Generate gpg key with details</h1>
+<pre><code class="language-text">gpg --full-generate-key
 </code></pre>
-<ul>
-<li>to export while offline:</li>
-</ul>
-<pre><code class="language-commandline">/opt/opendj/bin/stop-ds
-/opt/opendj/bin/export-ldif -n userRoot --offline -l filename.ldif
-/opt/opendj/bin/start-ds
+<h1 id="to-display-text-format-public-key">TO display text format public key</h1>
+<pre><code class="language-text">gpg --armor --export [email-id/key] &gt; gpg.key
+
+cat gpg.key
 </code></pre>
-<h1 id="import-data">Import Data</h1>
-<ul>
-<li>to import data into <code>/opt/opendj/backup.ldiff</code> file, change <code>pwd</code> with <strong>password</strong>:</li>
-</ul>
-<pre><code class="language-commandline">/opt/opendj/bin/import-ldif --hostname &quot;localhost&quot; --port 4444 --bindDN &quot;cn=Directory manager&quot; --bindPassword &quot;pwd&quot; --backendID userRoot --ldifFile ./backup.ldiff --trustAll
+<h1 id="add-this-key-into-github">Add this key into github</h1>
+<p>To know the process about "how to add GPG key in github?" please follow this link: https://medium.com/big0one/how-to-create-a-verified-commit-in-github-using-gpg-key-signature-16acee004e0f</p>
+<h1 id="add-this-key-into-local-git-client">Add this key into local git client</h1>
+<pre><code>$ git config --global user.signingkey [secret-key]
+$ git config --global commit.gpgsign true
+$ git config --global gpg.program $(which gpg)
+</code></pre>
+<h1 id="to-find-secret-key">To find secret key</h1>
+<pre><code>$ gpg --list-secret-keys --keyid-format=long
+</code></pre>
+<p>After then choose the secret key formatted as rsa.../secret key</p>
+<h1 id="commit-signature-verification">Commit Signature Verification</h1>
+<pre><code class="language-text">git commit -S -m &quot;msg&quot;
 </code></pre>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../dsconfig/" class="btn btn-neutral float-left" title="get-global-configuration-prop"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../ldapsearch/" class="btn btn-neutral float-right" title="To count total users in opendj backends:">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../devops/kubernetes/" class="btn btn-neutral float-left" title="Kubernetes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../linux/linux-command/" class="btn btn-neutral float-right" title="Linux command">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -195,10 +204,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../dsconfig/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../devops/kubernetes/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../ldapsearch/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../linux/linux-command/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Mobarak Hosen Shakil" /><link rel="canonical" href="https://imshakil.github.io/hand-notes/opendj/ldapsearch/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Mobarak Hosen Shakil" /><link rel="canonical" href="https://imshakil.github.io/hand-notes/apache/jvm-keystore/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>To count total users in opendj backends: - Shakil's Hand Notes</title>
+    <title>Jvm keystore - Shakil's Hand Notes</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "To count total users in opendj backends:";
-        var mkdocs_page_input_path = "opendj/ldapsearch.md";
-        var mkdocs_page_url = "/hand-notes/opendj/ldapsearch/";
+        var mkdocs_page_name = "Jvm keystore";
+        var mkdocs_page_input_path = "apache/jvm-keystore.md";
+        var mkdocs_page_url = "/hand-notes/apache/jvm-keystore/";
       </script>
     
     <!--[if lt IE 9]>
@@ -44,18 +44,34 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Apache</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../apache/httpd-on-centos/">Httpd on centos</a>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../httpd-on-centos/">Httpd on centos</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Jvm keystore</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Bash</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../bash/">Index</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bash/">Bash Programming Outline</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Database</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../database/sqlite3/">Python SQLite Cheat-Sheet</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Opendj</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../database/opendj/Connect-internal-LDAP-server-in-LDAP-browser/">Connect internal LDAP server in LDAP browser</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../database/opendj/basic-config/">Basic config</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../database/opendj/dsconfig/">get-global-configuration-prop</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../database/opendj/export-import/">Export data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../database/opendj/ldapsearch/">To count total users in opendj backends:</a>
+                </li>
+    </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Devops</span></p>
@@ -63,6 +79,11 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../devops/docker/">Docker</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../devops/kubernetes/">Kubernetes</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Gpg key</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../gpg-key/commit-signature-verification/">To install gnupg</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Linux</span></p>
@@ -82,21 +103,6 @@
               <p class="caption"><span class="caption-text">Networking</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../networking/ip-config/">Ip config</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Opendj</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../Connect-internal-LDAP-server-in-LDAP-browser/">Connect internal LDAP server in LDAP browser</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../basic-config/">Basic config</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../dsconfig/">get-global-configuration-prop</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../export-import/">Export data</a>
-                  </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">To count total users in opendj backends:</a>
-    <ul class="current">
-    </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Os</span></p>
@@ -132,8 +138,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-          <li>Opendj &raquo;</li>
-      <li class="breadcrumb-item active">To count total users in opendj backends:</li>
+          <li>Apache &raquo;</li>
+      <li class="breadcrumb-item active">Jvm keystore</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -142,18 +148,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="to-count-total-users-in-opendj-backends">To count total users in opendj backends:</h1>
-<pre><code class="language-text">/opt/opendj/bin/ldapsearch -h localhost -p 1636 -Z -X -D &quot;cn=directory manager&quot; -w &lt;password&gt; -b 'o=gluu' 'oxAuthGrantId=*' dn | grep 'dn:' | wc -l
-</code></pre>
-<h1 id="to-find-a-specific-user-using-its-uid">To Find a specific user using its <code>uid</code>:</h1>
-<pre><code>/opt/opendj/bin/ldapsearch -h localhost -p 1636 -Z -X -D &quot;cn=directory manager&quot; -w &quot;password&quot; -b 'o=gluu' &quot;(uid=admin)&quot;
-</code></pre>
+                <ol>
+<li>https://ordina-jworks.github.io/security/2019/08/14/Using-Lets-Encrypt-Certificates-In-Java.html</li>
+</ol>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../export-import/" class="btn btn-neutral float-left" title="Export data"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../os/linux/" class="btn btn-neutral float-right" title="Linux">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../httpd-on-centos/" class="btn btn-neutral float-left" title="Httpd on centos"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../bash/" class="btn btn-neutral float-right" title="Bash Programming Outline">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -177,10 +180,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../export-import/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../httpd-on-centos/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../os/linux/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../bash/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

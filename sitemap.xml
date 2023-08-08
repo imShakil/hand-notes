@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://imshakil.github.io/hand-notes/apache/jvm-keystore/</loc>
+         <lastmod>2023-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://imshakil.github.io/hand-notes/bash/</loc>
          <lastmod>2023-08-08</lastmod>
          <changefreq>daily</changefreq>
@@ -21,12 +26,42 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://imshakil.github.io/hand-notes/database/opendj/Connect-internal-LDAP-server-in-LDAP-browser/</loc>
+         <lastmod>2023-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/database/opendj/basic-config/</loc>
+         <lastmod>2023-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/database/opendj/dsconfig/</loc>
+         <lastmod>2023-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/database/opendj/export-import/</loc>
+         <lastmod>2023-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/database/opendj/ldapsearch/</loc>
+         <lastmod>2023-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://imshakil.github.io/hand-notes/devops/docker/</loc>
          <lastmod>2023-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/devops/kubernetes/</loc>
+         <lastmod>2023-08-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/gpg-key/commit-signature-verification/</loc>
          <lastmod>2023-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -52,31 +87,6 @@
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/networking/ip-config/</loc>
-         <lastmod>2023-08-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://imshakil.github.io/hand-notes/opendj/Connect-internal-LDAP-server-in-LDAP-browser/</loc>
-         <lastmod>2023-08-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://imshakil.github.io/hand-notes/opendj/basic-config/</loc>
-         <lastmod>2023-08-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://imshakil.github.io/hand-notes/opendj/dsconfig/</loc>
-         <lastmod>2023-08-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://imshakil.github.io/hand-notes/opendj/export-import/</loc>
-         <lastmod>2023-08-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://imshakil.github.io/hand-notes/opendj/ldapsearch/</loc>
          <lastmod>2023-08-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
