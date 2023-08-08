@@ -4,6 +4,6 @@ site_url: https://imshakil.github.io/hand-notes
 site_author: Mobarak Hosen Shakil
 site_description: It's my personal note pages curated from different sources. I have published if it helps someone in the community.
 
-docs_dir: docs
+docs_dir: ../
 theme: readthedocs
 
