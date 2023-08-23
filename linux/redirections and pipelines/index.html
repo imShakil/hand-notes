@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Mobarak Hosen Shakil" /><link rel="canonical" href="https://imshakil.github.io/hand-notes/networking/ip-config/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Mobarak Hosen Shakil" /><link rel="canonical" href="https://imshakil.github.io/hand-notes/linux/redirections%20and%20pipelines/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Ip config - Shakil's Hand Notes</title>
+    <title>Redirections, Pipes and Signals - Shakil's Hand Notes</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Ip config";
-        var mkdocs_page_input_path = "networking/ip-config.md";
-        var mkdocs_page_url = "/hand-notes/networking/ip-config/";
+        var mkdocs_page_name = "Redirections, Pipes and Signals";
+        var mkdocs_page_input_path = "linux/redirections and pipelines.md";
+        var mkdocs_page_url = "/hand-notes/linux/redirections%20and%20pipelines/";
       </script>
     
     <!--[if lt IE 9]>
@@ -87,14 +87,20 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Linux</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../linux/linux-command/">Basic Linux Commands Cheat-Sheet</a>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../linux-command/">Basic Linux Commands Cheat-Sheet</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../linux/memory/">To Find All the Process ID</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../memory/">To Find All the Process ID</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../linux/redirections%20and%20pipelines/">Redirections, Pipes and Signals</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Redirections, Pipes and Signals</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#managing-streams">Managing streams</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#operating-with-processes">Operating with processes</a>
+    </li>
+    </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../linux/top/">Top</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../top/">Top</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Mysql</span></p>
@@ -103,8 +109,8 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Networking</span></p>
-              <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Ip config</a>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../networking/ip-config/">Ip config</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Os</span></p>
@@ -140,8 +146,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-          <li>Networking &raquo;</li>
-      <li class="breadcrumb-item active">Ip config</li>
+          <li>Linux &raquo;</li>
+      <li class="breadcrumb-item active">Redirections, Pipes and Signals</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -150,13 +156,42 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="redirections-pipes-and-signals">Redirections, Pipes and Signals</h1>
+<h2 id="managing-streams">Managing streams</h2>
+<p>These are the redirectors that we can use to take control of the streams of our programs</p>
+<ul>
+<li>
+<p><strong><code>command &gt; file</code></strong>: redirects standard output, overwrites file</p>
+</li>
+<li>
+<p><strong><code>command &gt;&gt; file</code></strong>: redirects standard output, appends to file</p>
+</li>
+<li>
+<p><strong><code>command &lt; file</code></strong>: redirects standard input from file</p>
+</li>
+<li>
+<p><strong><code>command 2&gt; file</code></strong>: redirects standard error to file</p>
+</li>
+<li>
+<p><strong><code>command1 | command2</code></strong>: connects the output of command1 to the input of command2</p>
+</li>
+</ul>
+<h2 id="operating-with-processes">Operating with processes</h2>
+<p>These are some commands that are useful to know in Linux when interacting with processes. Not all of them are explained in videos, so feel free to investigate them on your own.</p>
+<p><strong><code>ps</code></strong>: lists the processes executing in the current terminal for the current user</p>
+<p><strong><code>ps ax</code></strong>: lists all processes currently executing for all users  </p>
+<p><strong><code>ps e</code></strong>: shows the environment for the processes listed  </p>
+<p><strong><code>kill PID</code></strong>: sends the SIGTERM signal to the process identified by PID</p>
+<p><strong><code>fg</code></strong>: causes a job that was stopped or in the background to return to the foreground</p>
+<p><strong><code>bg</code></strong>: causes a job that was stopped to go to the background</p>
+<p><strong><code>jobs</code></strong>: lists the jobs currently running or stopped</p>
+<p><strong><code>top</code></strong>: shows the processes currently using the most CPU time (press "q" to quit)  </p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../mysql/basic/" class="btn btn-neutral float-left" title="Basic"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../os/linux/" class="btn btn-neutral float-right" title="Linux">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../memory/" class="btn btn-neutral float-left" title="To Find All the Process ID"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../top/" class="btn btn-neutral float-right" title="Top">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -180,10 +215,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../mysql/basic/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../memory/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../os/linux/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../top/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
