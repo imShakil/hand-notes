@@ -35,33 +35,33 @@ cd directory: changes the current working directory to the specified one
 
 # Operating with the content of files
 
-**`cat`** file: shows the content of the file through standard output
+- **`cat`** file: shows the content of the file through standard output
 
-**`wc`** file: counts the amount of characters, words, and lines in the given file; can also count the same values of whatever it receives via stdin
+- **`wc`** file: counts the amount of characters, words, and lines in the given file; can also count the same values of whatever it receives via stdin
 
-**`file`** file: prints the type of the given file, as recognized by the operating system
+- **`file`** file: prints the type of the given file, as recognized by the operating system
 
-**`head`** file: shows the first 10 lines of the given file
+- **`head`** file: shows the first 10 lines of the given file
 
-**`tail`** file: shows the last 10 lines of the given file
+- **`tail`** file: shows the last 10 lines of the given file
 
-**`less`** file: scrolls through the contents of the given file (press "q" to quit)
+- **`less`** file: scrolls through the contents of the given file (press "q" to quit)
 
-**`sort`** file: sorts the lines of the file alphabetically
+- **`sort`** file: sorts the lines of the file alphabetically
 
-**`cut -dseparator -ffields`** file: for each line in the given file, splits the line according to the given separator and prints the given fields (starting from 1)
+- **`cut -dseparator -ffields`** file: for each line in the given file, splits the line according to the given separator and prints the given fields (starting from 1)
 
 # Additional commands
 
-**`echo "message"`**: prints the message to standard output
+- **`echo "message"`**: prints the message to standard output
 
-**`date`**: prints the current date
+- **`date`**: prints the current date
 
-**`who`**: prints the list of users currently logged into the computer
+- **`who`**: prints the list of users currently logged into the computer
 
-**`man`** command: shows the manual page of the given command; manual pages contain a lot of information explaining how to use each command (press "q" to quit)
+- **`man`** command: shows the manual page of the given command; manual pages contain a lot of information explaining how to use each command (press "q" to quit)
 
-**`uptime`**: shows how long the computer has been running
+- **`uptime`**: shows how long the computer has been running
 
-**`free`**: shows the amount of unused memory on the current system  
+- **`free`**: shows the amount of unused memory on the current system  
 
