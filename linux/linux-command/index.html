@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Mobarak Hosen Shakil" /><link rel="canonical" href="https://imshakil.github.io/hand-notes/linux/linux-command/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Linux command - Shakil's Hand Notes</title>
+    <title>Basic Linux Commands Cheat-Sheet - Shakil's Hand Notes</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Linux command";
+        var mkdocs_page_name = "Basic Linux Commands Cheat-Sheet";
         var mkdocs_page_input_path = "linux/linux-command.md";
         var mkdocs_page_url = "/hand-notes/linux/linux-command/";
       </script>
@@ -88,7 +88,9 @@
               </ul>
               <p class="caption"><span class="caption-text">Linux</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Linux command</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Basic Linux Commands Cheat-Sheet</a>
+    <ul class="current">
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../memory/">To Find All the Process ID</a>
                   </li>
@@ -139,7 +141,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Linux &raquo;</li>
-      <li class="breadcrumb-item active">Linux command</li>
+      <li class="breadcrumb-item active">Basic Linux Commands Cheat-Sheet</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -148,7 +150,70 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="basic-linux-commands-cheat-sheet">Basic Linux Commands Cheat-Sheet</h1>
+<p>This list includes a bunch of different commands that are useful to know when working with Linux. Not all of these commands are covered in the videos, so feel free to investigate them on your own.</p>
+<h1 id="managing-files-and-directories">Managing files and directories</h1>
+<p>cd directory: changes the current working directory to the specified one</p>
+<ul>
+<li>
+<p><strong><code>pwd</code></strong>: prints the current working directory</p>
+</li>
+<li>
+<p><strong><code>ls</code></strong>: lists the contents of the current directory</p>
+</li>
+<li>
+<p><strong><code>ls</code></strong> directory: lists the contents of the received directory  </p>
+</li>
+<li>
+<p><strong><code>ls -l</code></strong>: lists the additional information for the contents of the directory  </p>
+</li>
+<li>
+<p><strong><code>ls -a</code></strong>: lists all files, including those hidden  </p>
+</li>
+<li>
+<p><strong><code>ls -la</code></strong>: applies both the -l and the -a flags  </p>
+</li>
+<li>
+<p><strong><code>mkdir</code></strong> directory: creates the directory with the received name</p>
+</li>
+<li>
+<p><strong><code>rmdir</code></strong> directory: deletes the directory with the received name (if empty)</p>
+</li>
+<li>
+<p><strong><code>cp</code></strong> old_name new_name: copies old_name into new_name</p>
+</li>
+<li>
+<p><strong><code>mv</code></strong> old_name new_name: moves old_name into new_name</p>
+</li>
+<li>
+<p><strong><code>touch</code></strong> file_name: creates an empty file or updates the modified time if it exists</p>
+</li>
+<li>
+<p><strong><code>chmod</code></strong> modifiers files: changes the permissions for the files according to the provided modifiers; we've seen +x to make the file executable</p>
+</li>
+<li>
+<p><strong><code>chown</code></strong> user files: changes the owner of the files to the given user</p>
+</li>
+<li>
+<p><strong><code>chgrp</code></strong> group files: changes the group of the files to the given group</p>
+</li>
+</ul>
+<h1 id="operating-with-the-content-of-files">Operating with the content of files</h1>
+<p><strong><code>cat</code></strong> file: shows the content of the file through standard output</p>
+<p><strong><code>wc</code></strong> file: counts the amount of characters, words, and lines in the given file; can also count the same values of whatever it receives via stdin</p>
+<p><strong><code>file</code></strong> file: prints the type of the given file, as recognized by the operating system</p>
+<p><strong><code>head</code></strong> file: shows the first 10 lines of the given file</p>
+<p><strong><code>tail</code></strong> file: shows the last 10 lines of the given file</p>
+<p><strong><code>less</code></strong> file: scrolls through the contents of the given file (press "q" to quit)</p>
+<p><strong><code>sort</code></strong> file: sorts the lines of the file alphabetically</p>
+<p><strong><code>cut -dseparator -ffields</code></strong> file: for each line in the given file, splits the line according to the given separator and prints the given fields (starting from 1)</p>
+<h1 id="additional-commands">Additional commands</h1>
+<p><strong><code>echo "message"</code></strong>: prints the message to standard output</p>
+<p><strong><code>date</code></strong>: prints the current date</p>
+<p><strong><code>who</code></strong>: prints the list of users currently logged into the computer</p>
+<p><strong><code>man</code></strong> command: shows the manual page of the given command; manual pages contain a lot of information explaining how to use each command (press "q" to quit)</p>
+<p><strong><code>uptime</code></strong>: shows how long the computer has been running</p>
+<p><strong><code>free</code></strong>: shows the amount of unused memory on the current system  </p>
               
             </div>
           </div><footer>
