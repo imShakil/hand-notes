@@ -6,27 +6,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://imshakil.github.io/hand-notes/apache/httpd-on-centos/</loc>
-         <lastmod>2023-08-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://imshakil.github.io/hand-notes/apache/jvm-keystore/</loc>
-         <lastmod>2023-08-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://imshakil.github.io/hand-notes/bash/</loc>
-         <lastmod>2023-08-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://imshakil.github.io/hand-notes/bash/Bash/</loc>
-         <lastmod>2023-08-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://imshakil.github.io/hand-notes/database/sqlite3/</loc>
+         <lastmod>2023-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/database/mysql/basic/</loc>
          <lastmod>2023-08-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -66,52 +51,37 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://imshakil.github.io/hand-notes/gpg-key/commit-signature-verification/</loc>
-         <lastmod>2023-08-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://imshakil.github.io/hand-notes/linux/linux-command/</loc>
-         <lastmod>2023-08-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://imshakil.github.io/hand-notes/linux/memory/</loc>
-         <lastmod>2023-08-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://imshakil.github.io/hand-notes/linux/redirections%20and%20pipelines/</loc>
-         <lastmod>2023-08-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://imshakil.github.io/hand-notes/linux/top/</loc>
-         <lastmod>2023-08-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://imshakil.github.io/hand-notes/mysql/basic/</loc>
-         <lastmod>2023-08-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://imshakil.github.io/hand-notes/networking/ip-config/</loc>
          <lastmod>2023-08-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://imshakil.github.io/hand-notes/os/linux/</loc>
+         <loc>https://imshakil.github.io/hand-notes/operating-systems/linux/linux-command/</loc>
          <lastmod>2023-08-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://imshakil.github.io/hand-notes/ssh/host-manage/</loc>
+         <loc>https://imshakil.github.io/hand-notes/operating-systems/linux/memory/</loc>
          <lastmod>2023-08-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://imshakil.github.io/hand-notes/ssh/port-forwarding/</loc>
+         <loc>https://imshakil.github.io/hand-notes/operating-systems/linux/redirections%20and%20pipelines/</loc>
+         <lastmod>2023-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/operating-systems/linux/top/</loc>
+         <lastmod>2023-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/scripting/bash/</loc>
+         <lastmod>2023-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/scripting/bash/Bash/</loc>
          <lastmod>2023-08-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -122,6 +92,31 @@
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/tools/ngnix/</loc>
+         <lastmod>2023-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/tools/gpg-key/commit-signature-verification/</loc>
+         <lastmod>2023-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/tools/ssh/host-manage/</loc>
+         <lastmod>2023-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/tools/ssh/port-forwarding/</loc>
+         <lastmod>2023-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/web/apache/httpd-on-centos/</loc>
+         <lastmod>2023-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/web/apache/jvm-keystore/</loc>
          <lastmod>2023-08-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
