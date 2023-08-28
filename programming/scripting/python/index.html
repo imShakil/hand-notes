@@ -8,11 +8,11 @@
     <meta name="google-site-verification" content="xf0Bawfhzxg2gGXb4zWiUjGlEH-ns2ZzjYe6E8kSUJY" />
     <meta name="description" content="It's my personal note pages curated from different sources. I have published, thought it will help someone in the community.">
     <meta name="author" content="Mobarak Hosen Shakil">
-    <link rel="canonical" href="https://imshakil.github.io/hand-notes/database/opendj/Connect-internal-LDAP-server-in-LDAP-browser/">
+    <link rel="canonical" href="https://imshakil.github.io/hand-notes/programming/scripting/python/">
     <link rel="shortcut icon" href="../../../img/favicon.ico">
 
     
-    <title>Connect internal LDAP server in LDAP browser - Shakil's Hand Notes</title>
+    <title>Scripting in Python - Shakil's Hand Notes</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -76,13 +76,13 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Database <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../../sqlite3/">Python SQLite Cheat-Sheet</a>
+    <a href="../../../database/sqlite3/">Python SQLite Cheat-Sheet</a>
 </li>
 
                         
@@ -93,7 +93,7 @@
         
             
 <li >
-    <a href="../../mysql/basic/">Basic</a>
+    <a href="../../../database/mysql/basic/">Basic</a>
 </li>
 
         
@@ -107,32 +107,32 @@
     <ul class="dropdown-menu">
         
             
-<li class="active">
-    <a href="./">Connect internal LDAP server in LDAP browser</a>
+<li >
+    <a href="../../../database/opendj/Connect-internal-LDAP-server-in-LDAP-browser/">Connect internal LDAP server in LDAP browser</a>
 </li>
 
         
             
 <li >
-    <a href="../basic-config/">Basic config</a>
+    <a href="../../../database/opendj/basic-config/">Basic config</a>
 </li>
 
         
             
 <li >
-    <a href="../dsconfig/">get-global-configuration-prop</a>
+    <a href="../../../database/opendj/dsconfig/">get-global-configuration-prop</a>
 </li>
 
         
             
 <li >
-    <a href="../export-import/">Export data</a>
+    <a href="../../../database/opendj/export-import/">Export data</a>
 </li>
 
         
             
 <li >
-    <a href="../ldapsearch/">To count total users in opendj backends:</a>
+    <a href="../../../database/opendj/ldapsearch/">To count total users in opendj backends:</a>
 </li>
 
         
@@ -223,7 +223,7 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programming <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -239,13 +239,13 @@
         
             
 <li >
-    <a href="../../../programming/scripting/bash/">Bash Programming Outline</a>
+    <a href="../bash/">Bash Programming Outline</a>
 </li>
 
         
             
 <li >
-    <a href="../../../programming/scripting/bash/Bash/">Bash Programming</a>
+    <a href="../bash/Bash/">Bash Programming</a>
 </li>
 
         
@@ -259,8 +259,8 @@
     <ul class="dropdown-menu">
         
             
-<li >
-    <a href="../../../programming/scripting/python/">Scripting in Python</a>
+<li class="active">
+    <a href="./">Scripting in Python</a>
 </li>
 
         
@@ -372,12 +372,12 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../../mysql/basic/">
+                        <a rel="prev" href="../bash/Bash/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../basic-config/">
+                        <a rel="next" href="../../../tools/markdown/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
@@ -391,65 +391,12 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#ldap-server-info">LDAP server info</a></li>
-        <li class="first-level "><a href="#install-openssh-server">Install openssh-server</a></li>
-        <li class="first-level "><a href="#configure-ssh">Configure SSH</a></li>
-        <li class="first-level "><a href="#root-login">Root login</a></li>
-        <li class="first-level "><a href="#creating-tunnel">Creating Tunnel</a></li>
-        <li class="first-level "><a href="#connecting-ldap-server-in-apache-directory">Connecting LDAP server in Apache Directory</a></li>
+        <li class="first-level active"><a href="#scripting-in-python">Scripting in Python</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<p>This doc will help to connect your internal(VM) LDAP server to any LDAP browser (jx explorer, Apache Directory).
-Basically, I have installed an application with LDAP server in my Virtual Machine (vmware). After then, I was trying to connect that internal ldap server to Apache Directory in my Host Computer.
-Thoug I could access application server through my browser, but could not able to make connection of the ldap server into the Apache Directory. Later I found this solution that is the port of that ldap server was not able to communicate with my host computer even after adding that port into the firewall.
-Actually we have to create a tunnel of the ssh server to connect that port. </p>
-<h1 id="ldap-server-info">LDAP server info</h1>
-<p>bind dn: cn=admin/directory manager
-server address: localhost/ip:port
-server password: password</p>
-<p>In my case it is:
-bind dn: cn=directory manager
-server address: localhost:1636
-password: password</p>
-<h1 id="install-openssh-server">Install openssh-server</h1>
-<p>Make sure that both side of the machine (host computer and VM) have installed the <code>openssh-server</code>.
-To install openssh server:</p>
-<pre><code>sudo apt install openssh-server
-</code></pre>
-<p>To check the ssh status:</p>
-<pre><code>sudo service ssh status
-</code></pre>
-<h1 id="configure-ssh">Configure SSH</h1>
-<p>We need to configure ssh config file as below:</p>
-<pre><code>sudo nano /etc/ssh/sshd_config
-</code></pre>
-<p>From this file remove <code>#</code> right before <code>PermitRootLogin</code> and replace <code>*-password</code> with <code>yes</code> right after <code>PermitRootLogin</code></p>
-<p>Then reload the ssh server:</p>
-<pre><code>sudo systemctl reload ssh
-</code></pre>
-<h1 id="root-login">Root login</h1>
-<p>with <code>sudo su -</code> login as a root user. then set a root password with below command:</p>
-<pre><code>sudo passwd
-</code></pre>
-<h1 id="creating-tunnel">Creating Tunnel</h1>
-<p>To create tunnel:</p>
-<pre><code>ssh -fNL [port to be used in ldap browser]:ldap server address:ldap server port root@internal ldap server ip address
-</code></pre>
-<p>an example:</p>
-<pre><code>ssh -fNL 5909:localhost:1636 root@172.16.132.129
-</code></pre>
-<p>It may asked a root password just enter the password you have created using <code>sudo passwd</code>. 
-That's all.</p>
-<h1 id="connecting-ldap-server-in-apache-directory">Connecting LDAP server in Apache Directory</h1>
-<p>Select for a new connection and enter like this accroding to your own ldap server value. Please choose SSL connection if your ldap server has ssl connection.</p>
-<p><img alt="Screenshot from 2021-07-27 16-58-18" src="https://user-images.githubusercontent.com/20867846/127233153-f3613156-1b38-401a-85bc-06ec2ce560df.png" /></p>
-<p>After then enter the <code>bind dn</code> value and ldap server password and finish it.</p>
-<p><img alt="Screenshot from 2021-07-27 16-58-48" src="https://user-images.githubusercontent.com/20867846/127233157-a269ca64-c2c3-4fe5-8b88-ffea405ba3d7.png" /></p>
-<p>Finally you should see as below if it connect succesfully.</p>
-<p><img alt="Screenshot from 2021-07-27 16-59-08" src="https://user-images.githubusercontent.com/20867846/127233158-d245a917-0d3a-4a38-9296-75c551799510.png" /></p>
-<p>Thanks.</p></div>
+<h1 id="scripting-in-python">Scripting in Python</h1></div>
         
         
     </div>
