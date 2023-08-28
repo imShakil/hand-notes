@@ -2,122 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://imshakil.github.io/hand-notes/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/database/sqlite3/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/database/mysql/basic/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/database/opendj/Connect-internal-LDAP-server-in-LDAP-browser/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/database/opendj/basic-config/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/database/opendj/dsconfig/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/database/opendj/export-import/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/database/opendj/ldapsearch/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/devops/docker/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/devops/kubernetes/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/devops/networking/ip-config/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/operating-systems/linux/linux-command/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/operating-systems/linux/memory/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/operating-systems/linux/redirections%20and%20pipelines/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/operating-systems/linux/top/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/programming/scripting/bash/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/programming/scripting/bash/Bash/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/tools/markdown/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/tools/ngnix/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/tools/gpg-key/commit-signature-verification/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/tools/ssh/host-manage/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/tools/ssh/port-forwarding/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/web/apache/httpd-on-centos/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/web/apache/jvm-keystore/</loc>
-         <lastmod>2023-08-27</lastmod>
+         <lastmod>2023-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
