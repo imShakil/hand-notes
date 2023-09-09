@@ -56,11 +56,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://imshakil.github.io/hand-notes/git/merge/</loc>
-         <lastmod>2023-09-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://imshakil.github.io/hand-notes/operating-systems/linux/linux-command/</loc>
          <lastmod>2023-09-09</lastmod>
          <changefreq>daily</changefreq>
@@ -107,6 +102,11 @@
     </url>
     <url>
          <loc>https://imshakil.github.io/hand-notes/tools/ngnix/</loc>
+         <lastmod>2023-09-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://imshakil.github.io/hand-notes/tools/git/merge/</loc>
          <lastmod>2023-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
